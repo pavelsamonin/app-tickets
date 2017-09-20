@@ -12,4 +12,8 @@ class Main extends CI_Controller {
     {
         echo "Works!";
     }
+    public function index2()
+    {
+        echo "index2!";
+    }
 }
