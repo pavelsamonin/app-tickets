@@ -51,5 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'main';
 //$route['isoft/(:any)'] = 'isoft/main/$1';
+$route['isoft/main'] = 'isoft/main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
