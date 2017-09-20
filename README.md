@@ -1,1 +1,1 @@
-# app-tickets
+## Example Project
