@@ -28,8 +28,7 @@ class Main extends CI_Controller {
 //        echo $password."<br>";
 //        echo $db."<br>";
 
-        $data = [];
-        $result = $this->misoft->getTransaction($data);
+        $result = $this->misoft->getAllCustomers();
 
         var_dump($result);
 

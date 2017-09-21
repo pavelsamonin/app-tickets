@@ -15,6 +15,11 @@ class Misoft extends CI_Model
     function addCustomer($data){
 
     }
+    function getAllCustomers(){
+        return $this->db
+            ->get('customer')
+            ->result();
+    }
     function getTransaction($data){
         return $this->db
             ->get('transaction')
