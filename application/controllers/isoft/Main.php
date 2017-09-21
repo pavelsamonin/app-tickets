@@ -28,10 +28,11 @@ class Main extends CI_Controller {
 //        echo $password."<br>";
 //        echo $db."<br>";
 
-        $data = $this->misoft->getTransaction();
+        $data = [];
+        $result = $this->misoft->getTransaction($data);
 
-        var_dump($data);
+        var_dump($result);
 
-        $this->load->view('isoft/main',$data);
+        $this->load->view('isoft/main',$result);
     }
 }
