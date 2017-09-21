@@ -14,19 +14,6 @@ class Main extends CI_Controller {
     }
     public function index()
     {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-
-        $server = $url["host"];
-        $username = $url["user"];
-        $password = $url["pass"];
-        $db = substr($url["path"], 1);
-
-        $conn = new mysqli($server, $username, $password, $db);
-
-        echo $server."<br>";
-        echo $username."<br>";
-        echo $password."<br>";
-        echo $db."<br>";
-        echo "Works!";
+        echo "soon...";
     }
 }
