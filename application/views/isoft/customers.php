@@ -5,7 +5,6 @@
  * Date: 22.09.17
  * Time: 13:07
  */
-var_dump($data);
 ?>
 <table class="table">
     <thead class="thead-inverse">

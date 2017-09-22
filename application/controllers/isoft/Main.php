@@ -34,12 +34,6 @@ class Main extends CI_Controller {
         $this->load->view('isoft/header');
         $this->load->view('isoft/main', array('data' => $data));
         $this->load->view('isoft/footer');
-
-
-
-        var_dump($result);
-
-        $this->load->view('isoft/main',$result);
     }
 
     function addCustomer($data){
