@@ -15,8 +15,9 @@ class Login extends CI_Controller
         $this->load->model('misoft');
     }
 
-    function index($post)
+    function index()
     {
+        $post = $this->input->post();
         if(!$post)
             redirect('/isoft/main');
         if($user = $this->checkUser($post))
