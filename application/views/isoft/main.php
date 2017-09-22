@@ -13,7 +13,7 @@
     <div class="row">
 
         <?php
-            echo @$data;
+            echo @$content;
         ?>
 
     </div>
