@@ -19,5 +19,17 @@ class Login extends CI_Controller
     {
         if(!$post)
             redirect('/isoft/main');
+        if($user = $this->checkUser($post))
+            redirect('/isoft/main/showTransactions/'.$user);
+        redirect('/isoft/main');
+
+    }
+
+    function checkUser($data){
+        $login = $data['login'];
+        $password = md5($data['password']);
+        if($user = $this->misoft->login($login,$password))
+            return $user;
+        return false;
     }
 }

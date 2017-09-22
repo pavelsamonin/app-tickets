@@ -10,6 +10,7 @@
 
     <h1><?php echo @$data['head']; ?></h1>
 
+    <h3><?php echo @$data['user']; ?></h3>
     <table class="table">
         <thead class="thead-inverse">
         <tr>

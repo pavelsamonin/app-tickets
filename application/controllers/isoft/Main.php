@@ -12,7 +12,7 @@ class Main extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('misoft');
+        $this->load->model('isoft/misoft');
     }
 
     function index()
@@ -28,6 +28,7 @@ class Main extends CI_Controller
 //        echo $username."<br>";
 //        echo $password."<br>";
 //        echo $db."<br>";
+
         $title = 'Login Page';
         $result['head'] = 'Login Page';
         $data = $this->load->view('isoft/login', array('data' => $result), TRUE);
@@ -53,11 +54,12 @@ class Main extends CI_Controller
         $this->misoft->addCustomer($data);
     }
 
-    function showTransaction()
+    function showTransaction($user)
     {
         $title = 'Show Transactions';
         $result['transactions'] = $this->misoft->getAllTransactions();
         $result['head'] = 'Transactions table';
+        $result['user'] = $user;
         $data = $this->load->view('isoft/transactions', array('data' => $result), TRUE);
         $data .= $this->load->view('isoft/add_transaction');
         $this->load->view('isoft/header', array('title' => $title));
