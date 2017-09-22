@@ -29,6 +29,13 @@ class Misoft extends CI_Model
             ->result_array();
     }
 
+    function getAllTransactions()
+    {
+        return $this->db
+            ->get('transaction')
+            ->result_array();
+    }
+
     function getTransaction($data)
     {
         return $this->db
