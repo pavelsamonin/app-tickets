@@ -21,6 +21,7 @@
         <tbody>
         <?php
         foreach (@$data['customers'] as $customer) {
+            var_dump($customer['id']);die;
             ?>
             <tr>
                 <th scope="row"><?php echo $customer['id']; ?></th>
