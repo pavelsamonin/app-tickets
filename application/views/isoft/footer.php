@@ -8,7 +8,5 @@
 ?>
 <script src="/assets/jquery-3.2.1.min.js"></script>
 <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="validator.js"></script>
-<script src="contact.js"></script>
 </body>
 </html>

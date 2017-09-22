@@ -6,7 +6,7 @@
  * Time: 15:06
  */
 ?>
-<form id="contact-form" method="post" action="/isoft/login.php" role="form">
+<form id="contact-form" method="post" action="/isoft/login" role="form">
 
     <div class="messages"></div>
 
@@ -16,14 +16,14 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="login">Login *</label>
-                    <input id="login" type="text" name="login" class="form-control" placeholder="Please enter your login *" required="required" data-error="Login is required.">
+                    <input id="login" type="text" name="login" class="form-control" placeholder="Enter your login" required="required" data-error="Login is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="password">Password *</label>
-                    <input id="password" type="text" name="password" class="form-control" placeholder="Please enter your password *" required="required" data-error="Password is required.">
+                    <input id="password" type="password" name="password" class="form-control" placeholder="Enter your password" required="required" data-error="Password is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
