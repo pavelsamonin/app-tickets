@@ -12,7 +12,7 @@ class Main extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('isoft/misoft');
+        $this->load->model('misoft');
     }
 
     function index()
