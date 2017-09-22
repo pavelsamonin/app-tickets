@@ -32,6 +32,7 @@ class Main extends CI_Controller {
 
         $result['customers'] = $this->misoft->getAllCustomers();
         $result['head'] = 'Customers table';
+        var_dump($result);die;
         $data = $this->load->view('isoft/customers', array('data' => $result), TRUE);
 
         $this->load->view('isoft/header', array('title' => $title));
