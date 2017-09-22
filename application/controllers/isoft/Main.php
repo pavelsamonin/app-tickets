@@ -14,7 +14,7 @@ class Main extends CI_Controller {
         $this->load->model('misoft');
     }
 
-    public function index()
+    function index()
     {
 
 //        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -29,9 +29,22 @@ class Main extends CI_Controller {
 //        echo $db."<br>";
 
         $result = $this->misoft->getAllCustomers();
+        $data = $this->load->view('isoft/customers', array('data' => $result));
+
+        $this->load->view('isoft/header');
+        $this->load->view('isoft/main', array('data' => $data));
+        $this->load->view('isoft/footer');
+
+
 
         var_dump($result);
 
         $this->load->view('isoft/main',$result);
     }
+
+    function addCustomer($data){
+
+        $this->load->view('isoft/add_customer',$result);
+    }
+
 }
