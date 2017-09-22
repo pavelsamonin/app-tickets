@@ -29,7 +29,7 @@ class Main extends CI_Controller {
 //        echo $db."<br>";
 
         $result = $this->misoft->getAllCustomers();
-        $data = $this->load->view('isoft/customers', array('data' => $result));
+        $data = $this->load->view('isoft/customers', array('data' => $result), TRUE);
 
         $this->load->view('isoft/header');
         $this->load->view('isoft/main', array('data' => $data));
