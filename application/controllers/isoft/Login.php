@@ -12,7 +12,7 @@ class Login extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('misoft');
+        $this->load->model('mlogin');
     }
 
     function index()
@@ -29,7 +29,7 @@ class Login extends CI_Controller
     function checkUser($data){
         $login = $data['login'];
         $password = md5($data['password']);
-        if($user = $this->misoft->login($login,$password))
+        if($user = $this->mlogin->login($login,$password))
             return $user;
         return false;
     }
