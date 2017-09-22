@@ -28,10 +28,13 @@ class Main extends CI_Controller {
 //        echo $password."<br>";
 //        echo $db."<br>";
 
-        $result = $this->misoft->getAllCustomers();
-        $data = $this->load->view('isoft/customers', array('data' => $result), TRUE);
+        $title = 'Show Customers';
 
-        $this->load->view('isoft/header');
+        $result = $this->misoft->getAllCustomers();
+        $data['customers'] = $this->load->view('isoft/customers', array('data' => $result), TRUE);
+        $data['head'] = 'Customers table';
+
+        $this->load->view('isoft/header', array('title' => $title));
         $this->load->view('isoft/main', array('data' => $data));
         $this->load->view('isoft/footer');
     }
