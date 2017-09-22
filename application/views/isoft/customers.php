@@ -20,10 +20,8 @@
         </thead>
         <tbody>
         <?php
-        var_dump($data);
-        var_dump($data['customers']);die;
-
         foreach (@$data['customers'] as $customer) {
+            var_dump($customer);die;
             ?>
             <tr>
                 <th scope="row"><?php echo $customer['id']; ?></th>
