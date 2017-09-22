@@ -8,9 +8,7 @@
 ?>
 <div class="col-lg-8 col-lg-offset-2">
 
-    <h1><?php
-        var_dump($data);die;
-        echo @$data['head']; ?></h1>
+    <h1><?php echo @$data['head']; ?></h1>
 
 
     <table class="table">
