@@ -54,7 +54,7 @@ class Main extends CI_Controller
         $this->misoft->addCustomer($data);
     }
 
-    function showTransaction($user)
+    function showTransactions($user)
     {
         $title = 'Show Transactions';
         $result['transactions'] = $this->misoft->getAllTransactions();
