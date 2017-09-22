@@ -30,12 +30,12 @@ class Main extends CI_Controller {
 
         $title = 'Show Customers';
 
-        $result = $this->misoft->getAllCustomers();
-        $data['customers'] = $this->load->view('isoft/customers', array('data' => $result), TRUE);
-        $data['head'] = 'Customers table';
+        $result['customers'] = $this->misoft->getAllCustomers();
+        $result['head'] = 'Customers table';
+        $data = $this->load->view('isoft/customers', array('data' => $result), TRUE);
 
         $this->load->view('isoft/header', array('title' => $title));
-        $this->load->view('isoft/main', array('data' => $data));
+        $this->load->view('isoft/main', array('data' => $data),TRUE);
         $this->load->view('isoft/footer');
     }
 
