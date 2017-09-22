@@ -21,7 +21,7 @@
         <tbody>
         <?php
         var_dump($data);
-        var_dump(['customers']);die;
+        var_dump($data['customers']);die;
 
         foreach (@$data['customers'] as $customer) {
             ?>
