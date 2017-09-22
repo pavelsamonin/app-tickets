@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: samonin
@@ -12,27 +13,64 @@ class Misoft extends CI_Model
         parent::__construct();
     }
 
-    function addCustomer($data){
-
+    function addCustomer($data)
+    {
+        if($this->db->insert('customer', [
+            'name' => $data['name'],
+            'cnp' => $data['cnp']
+        ]))
+            return true;
     }
-    function getAllCustomers(){
+
+    function getAllCustomers()
+    {
         return $this->db
             ->get('customer')
             ->result();
     }
-    function getTransaction($data){
+
+    function getTransaction($data)
+    {
         return $this->db
-            ->get('transaction')
+            ->get_where('transaction', array($data['column'] => $data['value']))
             ->result();
     }
-    function getTransactionByFilter($data,$filter){
 
+    function getTransactionByFilter($data, $filter)
+    {
+        $result = $this->db
+            ->get_where('transaction', array($data['column'] => $data['value']));
+        if (@$filter['limit']) {
+            if (@$filter['offset']) {
+                $result = $result->limit(@$filter['limit'], @$filter['offset']);
+            }
+            $result = $result->limit(@$filter['limit']);
+        }
+        $result = $result->result();
+        return $result;
     }
-    function addTransaction($data){
 
+    function addTransaction($data)
+    {
+        if($this->db->insert('transaction', [
+            'customerId' => $data['customerId'],
+            'amount' => $data['amount'],
+            'date' => $data['date']
+        ]))
+            return true;
     }
-    function updateTransaction($data){
 
+    function updateTransaction($data)
+    {
+        if($this->db->update('transaction',
+            [
+                'customerId' => $data['customerId'],
+                'amount' => $data['amount'],
+                'date' => $data['date']
+            ],
+            ['id' => $data['id']]
+        ))
+            return true;
     }
 
 }
