@@ -26,7 +26,7 @@ class Misoft extends CI_Model
     {
         return $this->db
             ->get('customer')
-            ->result();
+            ->result_array();
     }
 
     function getTransaction($data)
