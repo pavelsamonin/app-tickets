@@ -5,7 +5,7 @@
  * Date: 24.09.17
  * Time: 16:34
  */
-require_once APPPATH . 'libraries/JWT.php';
+require_once APPPATH . 'libraries/Jwt.php';
 abstract class REST_Controller extends CI_Controller {
     // Note: Only the widely used HTTP status codes are documented
     // Informational
