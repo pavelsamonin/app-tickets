@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var url = 'https://app-tickets.herokuapp.com/isoft/auth/token_post';
+    var url = 'https://app-tickets.herokuapp.com/auth/token_post';
 
     $('#login-form').on('submit', function(event) {
         event.preventDefault();
@@ -22,7 +22,7 @@ $(document).ready(function () {
             success: function(data) {
                 // success handler
                 window.sessionStorage.token = data.token;
-                document.location.replace('https://app-tickets.herokuapp.com/isoft/main/showTransactions');
+                document.location.replace('https://app-tickets.herokuapp.com/main/showTransactions');
             }
         });
     });
