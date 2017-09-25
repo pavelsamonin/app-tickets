@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var url = 'https://app-tickets.herokuapp.com/auth/token_post';
+    var url = 'https://app-tickets.herokuapp.com/auth';
 
     $('#login-form').on('submit', function(event) {
         event.preventDefault();

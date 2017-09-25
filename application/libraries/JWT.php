@@ -8,7 +8,7 @@
  * @author Neuman Vong <neuman@twilio.com>
  * @minor changes for codeigniter <b3457m0d3@interr0bang.net>
  */
-class Jwt
+class JWT
 {
     /**
      * @param string      $jwt    The JWT
@@ -55,7 +55,7 @@ class Jwt
      */
     public function encode($payload, $key, $algo = 'HS256')
     {
-        $header = array('typ' => 'jwt', 'alg' => $algo);
+        $header = array('typ' => 'JWT', 'alg' => $algo);
         $segments = array();
         $segments[] = $this->urlsafeB64Encode($this->jsonEncode($header));
         $segments[] = $this->urlsafeB64Encode($this->jsonEncode($payload));

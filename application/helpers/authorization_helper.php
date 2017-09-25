@@ -5,7 +5,7 @@
  * Date: 23.09.17
  * Time: 17:48
  */
-require_once APPPATH . 'libraries/Jwt.php';
+require_once APPPATH . 'libraries/JWT.php';
 class Authorization
 {
     public static function validateToken($token)
