@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var url = 'http://localhost:8888/isoft/api/'+route;
+    var url = 'https://app-tickets.herokuapp.com/isoft/api/'+route;
     var redirect;
 
     switch (route){
@@ -32,7 +32,7 @@ $(document).ready(function () {
             },
             success: function(data) {
                 // success handler
-                document.location.replace('http://localhost:8888/isoft/main/' + redirect);
+                document.location.replace('https://app-tickets.herokuapp.com/isoft/main/' + redirect);
             }
         });
     });
@@ -80,7 +80,7 @@ $(document).ready(function () {
     }
 
     function editRequest(id,amount) {
-        var url = 'http://localhost:8888/isoft/api/updateTransaction';
+        var url = 'https://app-tickets.herokuapp.com/isoft/api/updateTransaction';
         var redirect = 'showTransactions';
         var data = {
             'amount' : amount,
@@ -103,12 +103,12 @@ $(document).ready(function () {
             },
             success: function(response) {
                 // success handler
-                document.location.replace('http://localhost:8888/isoft/main/' + redirect);
+                document.location.replace('https://app-tickets.herokuapp.com/isoft/main/' + redirect);
             }
         });
     }
     function deleteRequest(id) {
-        var url = 'http://localhost:8888/isoft/api/deleteTransaction';
+        var url = 'https://app-tickets.herokuapp.com/isoft/api/deleteTransaction';
         var redirect = 'showTransactions';
         var data = {
             'transactionId' : id
@@ -130,7 +130,7 @@ $(document).ready(function () {
             },
             success: function(response) {
                 // success handler
-                document.location.replace('http://localhost:8888/isoft/main/' + redirect);
+                document.location.replace('https://app-tickets.herokuapp.com/isoft/main/' + redirect);
             }
         });
     }

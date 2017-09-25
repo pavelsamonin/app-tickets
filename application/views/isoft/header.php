@@ -19,8 +19,8 @@
 </head>
 <script>
     var token = window.sessionStorage.token ? window.sessionStorage.token : null;
-    if(window.location.href != 'http://localhost:8888/isoft/' && window.location.href != 'http://localhost:8888/isoft/main/'){
+    if(window.location.href != 'https://app-tickets.herokuapp.com/isoft/' && window.location.href != 'https://app-tickets.herokuapp.com/isoft/main/'){
         if(token == null)
-            document.location.replace('http://localhost:8888/isoft');
+            document.location.replace('https://app-tickets.herokuapp.com/isoft');
     }
 </script>
