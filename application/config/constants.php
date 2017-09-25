@@ -97,7 +97,7 @@ switch(ENVIRONMENT):
         break;
 
     case 'production':
-        defined('BASE_URL')      ? null : define('BASE_URL', 'https://app-tickets.herokuapp.com');
+        defined('BASE_URL')      ? null : define('BASE_URL', 'https://app-tickets.herokuapp.com/isoft');
 
 # DB
         defined('DB_HOST')      ? null : define('DB_HOST', 'eu-cdbr-west-01.cleardb.com');
