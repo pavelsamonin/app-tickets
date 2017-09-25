@@ -12,6 +12,7 @@ class Auth extends CI_Controller
 {
     function __construct()
     {
+        var_dump(APPPATH);die;
         parent::__construct();
         $this->load->model('misoft');
         $this->load->model('mauth');
