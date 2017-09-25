@@ -11,6 +11,7 @@ class Main extends CI_Controller
 {
     function __construct()
     {
+        var_dump(BASE_URL);die;
         parent::__construct();
         $this->load->model('misoft');
     }
