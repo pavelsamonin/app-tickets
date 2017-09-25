@@ -17,6 +17,7 @@ class Auth extends CI_Controller
         $this->load->model('mauth');
         $this->load->library('jwt');
         $this->rest = new Rest;
+        var_dump(333);
     }
 
     public function __call($method, $args)
@@ -58,6 +59,7 @@ class Auth extends CI_Controller
 
     public function token_post()
     {
+        var_dump(444);die;
         $dataPost = $this->input->post();
         $user = $this->mauth->login($dataPost['username'], $dataPost['password']);
         if ($user != null) {
