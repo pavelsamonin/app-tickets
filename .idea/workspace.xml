@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af535296-ba58-4fe6-bc15-f478552ab050" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/libraries/JWT.php" afterPath="$PROJECT_DIR$/application/libraries/Jwt.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/authorization_helper.php" afterPath="$PROJECT_DIR$/application/helpers/authorization_helper.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/helpers/rest_helper.php" afterPath="$PROJECT_DIR$/application/helpers/rest_helper.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/isoft/Auth.php" afterPath="$PROJECT_DIR$/application/controllers/isoft/Auth.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,17 +53,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Jwt.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Jwt.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/libraries/Jwt.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
@@ -152,7 +150,6 @@
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
         <option value="$PROJECT_DIR$/assets/js/api.js" />
         <option value="$PROJECT_DIR$/application/views/isoft/login.php" />
-        <option value="$PROJECT_DIR$/application/controllers/isoft/Auth.php" />
         <option value="$PROJECT_DIR$/application/controllers/isoft/Api.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
@@ -162,6 +159,7 @@
         <option value="$PROJECT_DIR$/application/libraries/JWT.php" />
         <option value="$PROJECT_DIR$/application/helpers/rest_helper.php" />
         <option value="$PROJECT_DIR$/application/helpers/authorization_helper.php" />
+        <option value="$PROJECT_DIR$/application/controllers/isoft/Auth.php" />
       </list>
     </option>
   </component>
@@ -316,12 +314,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506345626392</updated>
-      <workItem from="1506345627704" duration="4119000" />
+      <workItem from="1506345627704" duration="4277000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4119000" />
+    <option name="totallyTimeSpent" value="4277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -501,14 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Auth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/helpers/rest_helper.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -529,6 +519,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>

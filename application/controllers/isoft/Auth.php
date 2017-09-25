@@ -13,10 +13,11 @@ class Auth extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        $this->load->model('misoft');
-        $this->load->model('mauth');
-        $this->load->library('jwt');
-        $this->rest = new Rest;
+        var_dump(111);die;
+//        $this->load->model('misoft');
+//        $this->load->model('mauth');
+//        $this->load->library('jwt');
+//        $this->rest = new Rest;
     }
 
     public function __call($method, $args)
@@ -59,7 +60,6 @@ class Auth extends CI_Controller
     public function token_post()
     {
         $dataPost = $this->input->post();
-        var_dump($dataPost);die;
         $user = $this->mauth->login($dataPost['username'], $dataPost['password']);
         if ($user != null) {
             $tokenData = array();
