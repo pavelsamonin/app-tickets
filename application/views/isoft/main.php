@@ -6,17 +6,17 @@
  * Time: 11:49
  */
 ?>
-<body>
 
-<div class="container">
-
-    <div class="row">
-
-        <?php
-            echo @$content;
-        ?>
-
-    </div>
+<?php
+echo @$content;
+?>
 
 </div>
+
+</div>
+</div>
+</div>
+
+</div>
+
 
