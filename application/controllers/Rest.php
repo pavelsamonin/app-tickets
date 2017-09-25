@@ -377,7 +377,7 @@ class Rest extends CI_Controller {
             $language = 'english';
         }
         // Load the language file
-        $this->lang->load('rest_controller', $language, FALSE, TRUE, __DIR__.'/../');
+        $this->lang->load('rest_controller', $language, FALSE, TRUE, __DIR__ . '/controllers/');
         // Initialise the response, request and rest objects
         $this->request = new stdClass();
         $this->response = new stdClass();
