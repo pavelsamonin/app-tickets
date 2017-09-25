@@ -13,11 +13,11 @@ class Auth extends CI_Controller
     function __construct()
     {
         parent::__construct();
-        var_dump(111);die;
-//        $this->load->model('misoft');
-//        $this->load->model('mauth');
-//        $this->load->library('jwt');
-//        $this->rest = new Rest;
+        $this->load->model('misoft');
+        $this->load->model('mauth');
+        $this->load->library('jwt');
+        var_dump(222);die;
+        $this->rest = new Rest;
     }
 
     public function __call($method, $args)
