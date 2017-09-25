@@ -6,7 +6,7 @@
  * Time: 15:06
  */
 ?>
-<form id="contact-form" method="post" action="/isoft/login" role="form">
+<form id="login-form" method="post" role="form">
 
     <div class="messages"></div>
 
@@ -16,7 +16,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="login">Login *</label>
-                    <input id="login" type="text" name="login" class="form-control" placeholder="Enter your login" required="required" data-error="Login is required.">
+                    <input id="login" type="text" name="username" class="form-control" placeholder="Enter your login" required="required" data-error="Login is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>

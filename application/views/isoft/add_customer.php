@@ -8,6 +8,7 @@
 ?>
 
 <body>
+<script>var route = 'addCustomer';</script>
 
 <div class="container">
 
@@ -17,10 +18,7 @@
 
             <h1>Add customer</h1>
 
-            <p class="lead">This is a demo for our tutorial dedicated to crafting working Bootstrap contact form with PHP and AJAX background.</p>
-
-            <!-- We're going to place the form here in the next step -->
-            <form id="contact-form" method="post" action="/main/addCustomer" role="form">
+            <form id="contact-form" method="post" role="form">
 
                 <div class="controls">
 

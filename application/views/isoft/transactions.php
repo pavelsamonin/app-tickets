@@ -18,17 +18,35 @@
             <th>CustomerId</th>
             <th>Amount</th>
             <th>Date</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         </thead>
         <tbody>
         <?php
-        foreach (@$data['transactions'] as $ctransaction) {
+        foreach (@$data['transactions'] as $transaction) {
             ?>
-            <tr>
-                <th scope="row"><?php echo $ctransaction['id']; ?></th>
-                <td><?php echo $ctransaction['customerId']; ?></td>
-                <td><?php echo $ctransaction['amount']; ?></td>
-                <td><?php echo $ctransaction['date']; ?></td>
+            <tr data-id="<?php echo $transaction->id; ?>" data-amount="<?php echo $transaction->amount; ?>">
+                <th scope="row"><?php echo $transaction->id; ?></th>
+                <td><?php echo $transaction->customerId; ?></td>
+                <td><?php echo $transaction->amount; ?></td>
+                <td><?php echo $transaction->date; ?></td>
+                <td>
+                    <p data-placement="top" data-toggle="tooltip" title="Edit">
+                        <button class="btn btn-warning btn-xs" data-title="Edit" data-toggle="modal"
+                                data-target="#edit" data-method="edit" data-attr="<?php echo $transaction->id; ?>">
+                            <span class="glyphicon glyphicon-pencil"></span>
+                        </button>
+                    </p>
+                </td>
+                <td>
+                    <p data-placement="top" data-toggle="tooltip" title="Delete">
+                        <button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
+                                data-target="#delete" data-method="delete" data-attr="<?php echo $transaction->id; ?>">
+                            <span class="glyphicon glyphicon-trash"></span>
+                        </button>
+                    </p>
+                </td>
             </tr>
             <?php
         }
@@ -36,4 +54,62 @@
         </tbody>
     </table>
 
+</div>
+
+<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+                            class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input class="form-control" id="amount" name="amount" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="id">TransactionId</label>
+                    <input class="form-control" id="id" name="name" type="text" disabled>
+                </div>
+            </div>
+            <div class="modal-footer ">
+                <button type="button" id="editSubmit" class="btn btn-warning btn-lg" style="width: 100%;"><span
+                            class="glyphicon glyphicon-ok-sign"></span> Update
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+                            class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
+                <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you
+                    want to delete this Record?
+                </div>
+
+            </div>
+            <div class="modal-footer ">
+                <button type="button" id="deleteSubmit" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Yes
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span
+                            class="glyphicon glyphicon-remove"></span> No
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
 </div>

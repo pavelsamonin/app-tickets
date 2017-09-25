@@ -83,3 +83,27 @@ defined('EXIT_USER_INPUT')     OR define('EXIT_USER_INPUT', 7); // invalid user 
 defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
+
+switch(ENVIRONMENT):
+
+    case 'development':
+        defined('BASE_URL')      ? null : define('BASE_URL', 'localhost:8888/isoft');
+
+# DB
+        defined('DB_HOST')      ? null : define('DB_HOST', 'localhost:8889');
+        defined('DB_USER')      ? null : define('DB_USER', 'root');
+        defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', 'root');
+        defined('DB_NAME')      ? null : define('DB_NAME', 'isoft');
+        break;
+
+    case 'production':
+        defined('BASE_URL')      ? null : define('BASE_URL', 'lhttps://app-tickets.herokuapp.com');
+
+# DB
+        defined('DB_HOST')      ? null : define('DB_HOST', 'eu-cdbr-west-01.cleardb.com');
+        defined('DB_USER')      ? null : define('DB_USER', 'b7ce41377c1f17');
+        defined('DB_PASSWORD')  ? null : define('DB_PASSWORD', 'd8c76d5e');
+        defined('DB_NAME')      ? null : define('DB_NAME', 'heroku_1115e26693860b9');
+        break;
+
+endswitch;

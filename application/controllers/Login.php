@@ -19,10 +19,12 @@ class Login extends CI_Controller
     {
         $post = $this->input->post();
         if(!$post)
-            redirect('/isoft/main');
-        if($user = $this->checkUser($post))
-            redirect('/isoft/main/showTransactions/'.$user);
-        redirect('/isoft/main');
+            redirect(BASE_URL);
+        if($user = $this->checkUser($post)){
+            header("Location: /isoft/main/showTransactions");
+            return;
+        }
+        redirect(BASE_URL);
 
     }
 

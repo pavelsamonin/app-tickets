@@ -23,9 +23,9 @@
         foreach (@$data['customers'] as $customer) {
             ?>
             <tr>
-                <th scope="row"><?php echo $customer['id']; ?></th>
-                <td><?php echo $customer['name']; ?></td>
-                <td><?php echo $customer['cnp']; ?></td>
+                <th scope="row"><?php echo $customer->id; ?></th>
+                <td><?php echo $customer->name; ?></td>
+                <td><?php echo $customer->cnp; ?></td>
             </tr>
             <?php
         }
