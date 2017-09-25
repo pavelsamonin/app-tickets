@@ -7,17 +7,16 @@
  * Time: 16:14
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
-require_once ('Rest.php');
+require_once APPPATH . 'controllers/Rest.php';
 
 class Api extends CI_Controller
 {
-    var $rest;
-
     function __construct()
     {
         parent::__construct();
         $this->load->model('misoft');
         $this->load->model('mauth');
+        $this->load->helper('authorization_helper');
         $this->rest = new Rest;
     }
 
