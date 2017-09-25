@@ -16,7 +16,6 @@ class Auth extends CI_Controller
         $this->load->model('misoft');
         $this->load->model('mauth');
         $this->load->library('jwt');
-        var_dump(222);die;
         $this->rest = new Rest;
     }
 
