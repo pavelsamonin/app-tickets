@@ -7,7 +7,7 @@
  * Time: 16:14
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
-require_once APPPATH . 'controllers/Rest.php';
+require_once APPPATH . 'controllers/isoft/Rest.php';
 
 class Api extends CI_Controller
 {
