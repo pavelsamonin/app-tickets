@@ -17,7 +17,6 @@ class Auth extends CI_Controller
         $this->load->model('mauth');
         $this->load->library('jwt');
         $this->rest = new Rest;
-        var_dump(333);die;
     }
 
     public function __call($method, $args)

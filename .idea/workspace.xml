@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af535296-ba58-4fe6-bc15-f478552ab050" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/isoft/Rest.php" afterPath="$PROJECT_DIR$/application/controllers/Rest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/isoft/Auth.php" afterPath="$PROJECT_DIR$/application/controllers/isoft/Auth.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/isoft/Api.php" afterPath="$PROJECT_DIR$/application/controllers/Api.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/isoft/Auth.php" afterPath="$PROJECT_DIR$/application/controllers/Auth.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/isoft/Login.php" afterPath="$PROJECT_DIR$/application/controllers/Login.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/application/controllers/isoft/Main.php" afterPath="$PROJECT_DIR$/application/controllers/Main.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/constants.php" afterPath="$PROJECT_DIR$/application/config/constants.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/routes.php" afterPath="$PROJECT_DIR$/application/config/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/api.js" afterPath="$PROJECT_DIR$/assets/js/api.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,16 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/config/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="523" column="0" lean-forward="true" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="constants.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/config/constants.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,11 +39,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Auth.php">
+      <file leaf-file-name="Auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="278">
+              <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="99" column="35" lean-forward="true" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -130,12 +135,18 @@
       <find>Jwt</find>
       <find>jwt</find>
       <find>rest_controller_lang</find>
+      <find>isoft</find>
     </findStrings>
     <replaceStrings>
       <replace>https://app-tickets.herokuapp.com/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/application/config</dir>
+      <dir>$PROJECT_DIR$/application/controllers</dir>
+      <dir>$PROJECT_DIR$/application/helpers</dir>
+      <dir>$PROJECT_DIR$/application/libraries</dir>
+      <dir>$PROJECT_DIR$/application/models</dir>
+      <dir>$PROJECT_DIR$/assets</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -149,7 +160,6 @@
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/views/isoft/header.php" />
         <option value="$PROJECT_DIR$/application/controllers/Main.php" />
-        <option value="$PROJECT_DIR$/assets/js/api.js" />
         <option value="$PROJECT_DIR$/application/views/isoft/login.php" />
         <option value="$PROJECT_DIR$/application/controllers/isoft/Api.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
@@ -163,6 +173,7 @@
         <option value="$PROJECT_DIR$/application/controllers/isoft/Rest.php" />
         <option value="$PROJECT_DIR$/application/libraries/Format.php" />
         <option value="$PROJECT_DIR$/application/controllers/isoft/Auth.php" />
+        <option value="$PROJECT_DIR$/assets/js/api.js" />
       </list>
     </option>
   </component>
@@ -215,13 +226,6 @@
               <item name="app-tickets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="app-tickets" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-tickets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="isoft" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="app-tickets" type="b2602c69:ProjectViewProjectNode" />
@@ -318,12 +322,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1506345626392</updated>
-      <workItem from="1506345627704" duration="4965000" />
+      <workItem from="1506345627704" duration="5352000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4965000" />
+    <option name="totallyTimeSpent" value="5352000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -390,7 +394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Login.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -406,15 +410,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Main.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
@@ -478,7 +474,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Api.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Api.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-124">
           <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
@@ -534,10 +530,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/isoft/Auth.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="278">
+          <caret line="42" column="52" lean-forward="true" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="99" column="35" lean-forward="true" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           <folding />
         </state>
       </provider>
