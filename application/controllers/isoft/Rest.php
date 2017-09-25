@@ -5,7 +5,7 @@
  * Date: 24.09.17
  * Time: 16:48
  */
- class Rest extends CI_Controller {
+class Rest extends CI_Controller {
     // Note: Only the widely used HTTP status codes are documented
     // Informational
     const HTTP_CONTINUE = 100;
@@ -377,7 +377,7 @@
             $language = 'english';
         }
         // Load the language file
-        $this->lang->load('rest_controller', $language, FALSE, TRUE, __DIR__ . '/application/');
+        $this->lang->load('rest_controller', $language, FALSE, TRUE, __DIR__.'/../');
         // Initialise the response, request and rest objects
         $this->request = new stdClass();
         $this->response = new stdClass();
@@ -499,7 +499,7 @@
      */
     private function get_local_config($config_file)
     {
-        if(file_exists(__DIR__ . "/../config/" .$config_file.".php"))
+        if(file_exists(__DIR__."/../config/".$config_file.".php"))
         {
             $config = array();
             include(__DIR__ . "/../config/" . $config_file . ".php");
