@@ -7,12 +7,11 @@
  */
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-require_once APPPATH . 'controllers/Rest.php';
+require_once ('Rest.php');
 class Auth extends CI_Controller
 {
     function __construct()
     {
-        var_dump(APPPATH);die;
         parent::__construct();
         $this->load->model('misoft');
         $this->load->model('mauth');
