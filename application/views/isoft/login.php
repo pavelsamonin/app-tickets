@@ -6,6 +6,7 @@
  * Time: 15:06
  */
 ?>
+<script>var route = '';</script>
 <form id="login-form" method="post" role="form">
 
     <div class="messages"></div>

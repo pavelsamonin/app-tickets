@@ -59,6 +59,7 @@ class Auth extends CI_Controller
     public function token_post()
     {
         $dataPost = $this->input->post();
+        var_dump($dataPost);die;
         $user = $this->mauth->login($dataPost['username'], $dataPost['password']);
         if ($user != null) {
             $tokenData = array();
